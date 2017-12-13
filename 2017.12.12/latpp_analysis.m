@@ -10,7 +10,7 @@ TS = 0.1;
 path = 'debug_pp/';
 
 dirOutput = dir(fullfile(path,'*_pp_debug.txt'));
-debug_data = load([path,dirOutput(end).name]);
+debug_data = load([path,dirOutput(end-1).name]);
 
 
 time_vec = debug_data(:,1);
